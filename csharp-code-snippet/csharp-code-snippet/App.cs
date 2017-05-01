@@ -1,4 +1,5 @@
-﻿using csharp_code_snippet.sort;
+﻿using csharp_code_snippet.simpleSocket;
+using csharp_code_snippet.sort;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,6 +30,22 @@ namespace csharp_code_snippet
         {
             DictionarySort dicSort = new DictionarySort();
             dicSort.Sort2();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SocketServer server = new SocketServer();
+            server.Start();
+        }
+
+        private void simpleSockClient_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                ClientSocket sock = new ClientSocket();
+                sock.Execute();
+            }
+         
         }
     }
 }

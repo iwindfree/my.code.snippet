@@ -52,6 +52,9 @@
     <Compile Include="App.Designer.cs">
       <DependentUpon>App.cs</DependentUpon>
     </Compile>
+    <Compile Include="simpleSocket\ClientSocket.cs" />
+    <Compile Include="simpleSocket\HandleClient.cs" />
+    <Compile Include="simpleSocket\SocketServer.cs" />
     <Compile Include="sort\DictionaryComparer.cs" />
     <Compile Include="sort\DictionarySort.cs" />
     <Compile Include="Program.cs" />
