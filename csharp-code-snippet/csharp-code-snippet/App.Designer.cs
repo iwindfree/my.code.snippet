@@ -30,17 +30,21 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnSortDictionary1 = new System.Windows.Forms.Button();
-            this.btnSortDictionary2 = new System.Windows.Forms.Button();
-            this.simpleSockSrv = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.simpleSockClient = new System.Windows.Forms.Button();
+            this.simpleSockSrv = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSortDictionary1 = new System.Windows.Forms.Button();
+            this.btnSortDictionary2 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnQuiz1 = new System.Windows.Forms.Button();
+            this.btnPatternMatch = new System.Windows.Forms.Button();
+            this.btnAnagram = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -66,35 +70,25 @@
             this.tabPage1.Text = "Snippet 1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // groupBox2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.simpleSockClient);
+            this.groupBox2.Controls.Add(this.simpleSockSrv);
+            this.groupBox2.Location = new System.Drawing.Point(6, 141);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(176, 110);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
             // 
-            // btnSortDictionary1
+            // simpleSockClient
             // 
-            this.btnSortDictionary1.Location = new System.Drawing.Point(6, 17);
-            this.btnSortDictionary1.Name = "btnSortDictionary1";
-            this.btnSortDictionary1.Size = new System.Drawing.Size(161, 32);
-            this.btnSortDictionary1.TabIndex = 0;
-            this.btnSortDictionary1.Text = "DictionarySort-1";
-            this.btnSortDictionary1.UseVisualStyleBackColor = true;
-            this.btnSortDictionary1.Click += new System.EventHandler(this.btnSortDictionary_Click);
-            // 
-            // btnSortDictionary2
-            // 
-            this.btnSortDictionary2.Location = new System.Drawing.Point(6, 50);
-            this.btnSortDictionary2.Name = "btnSortDictionary2";
-            this.btnSortDictionary2.Size = new System.Drawing.Size(161, 32);
-            this.btnSortDictionary2.TabIndex = 1;
-            this.btnSortDictionary2.Text = "DictionarySort-2";
-            this.btnSortDictionary2.UseVisualStyleBackColor = true;
-            this.btnSortDictionary2.Click += new System.EventHandler(this.btnSortDictionary2_Click);
+            this.simpleSockClient.Location = new System.Drawing.Point(6, 62);
+            this.simpleSockClient.Name = "simpleSockClient";
+            this.simpleSockClient.Size = new System.Drawing.Size(156, 36);
+            this.simpleSockClient.TabIndex = 3;
+            this.simpleSockClient.Text = "simpleSockClient";
+            this.simpleSockClient.UseVisualStyleBackColor = true;
+            this.simpleSockClient.Click += new System.EventHandler(this.simpleSockClient_Click);
             // 
             // simpleSockSrv
             // 
@@ -116,25 +110,68 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox2
+            // btnSortDictionary1
             // 
-            this.groupBox2.Controls.Add(this.simpleSockClient);
-            this.groupBox2.Controls.Add(this.simpleSockSrv);
-            this.groupBox2.Location = new System.Drawing.Point(6, 141);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(176, 110);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
+            this.btnSortDictionary1.Location = new System.Drawing.Point(6, 17);
+            this.btnSortDictionary1.Name = "btnSortDictionary1";
+            this.btnSortDictionary1.Size = new System.Drawing.Size(161, 32);
+            this.btnSortDictionary1.TabIndex = 0;
+            this.btnSortDictionary1.Text = "DictionarySort-1";
+            this.btnSortDictionary1.UseVisualStyleBackColor = true;
+            this.btnSortDictionary1.Click += new System.EventHandler(this.btnSortDictionary_Click);
             // 
-            // simpleSockClient
+            // btnSortDictionary2
             // 
-            this.simpleSockClient.Location = new System.Drawing.Point(6, 62);
-            this.simpleSockClient.Name = "simpleSockClient";
-            this.simpleSockClient.Size = new System.Drawing.Size(156, 36);
-            this.simpleSockClient.TabIndex = 3;
-            this.simpleSockClient.Text = "simpleSockClient";
-            this.simpleSockClient.UseVisualStyleBackColor = true;
-            this.simpleSockClient.Click += new System.EventHandler(this.simpleSockClient_Click);
+            this.btnSortDictionary2.Location = new System.Drawing.Point(6, 50);
+            this.btnSortDictionary2.Name = "btnSortDictionary2";
+            this.btnSortDictionary2.Size = new System.Drawing.Size(161, 32);
+            this.btnSortDictionary2.TabIndex = 1;
+            this.btnSortDictionary2.Text = "DictionarySort-2";
+            this.btnSortDictionary2.UseVisualStyleBackColor = true;
+            this.btnSortDictionary2.Click += new System.EventHandler(this.btnSortDictionary2_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnAnagram);
+            this.tabPage2.Controls.Add(this.btnPatternMatch);
+            this.tabPage2.Controls.Add(this.btnQuiz1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(892, 507);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Quiz";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnQuiz1
+            // 
+            this.btnQuiz1.Location = new System.Drawing.Point(20, 24);
+            this.btnQuiz1.Name = "btnQuiz1";
+            this.btnQuiz1.Size = new System.Drawing.Size(141, 38);
+            this.btnQuiz1.TabIndex = 0;
+            this.btnQuiz1.Text = "PacketRestore";
+            this.btnQuiz1.UseVisualStyleBackColor = true;
+            this.btnQuiz1.Click += new System.EventHandler(this.btnQuiz1_Click);
+            // 
+            // btnPatternMatch
+            // 
+            this.btnPatternMatch.Location = new System.Drawing.Point(20, 68);
+            this.btnPatternMatch.Name = "btnPatternMatch";
+            this.btnPatternMatch.Size = new System.Drawing.Size(141, 38);
+            this.btnPatternMatch.TabIndex = 1;
+            this.btnPatternMatch.Text = "PatternMatch";
+            this.btnPatternMatch.UseVisualStyleBackColor = true;
+            this.btnPatternMatch.Click += new System.EventHandler(this.btnPatternMatch_Click);
+            // 
+            // btnAnagram
+            // 
+            this.btnAnagram.Location = new System.Drawing.Point(20, 112);
+            this.btnAnagram.Name = "btnAnagram";
+            this.btnAnagram.Size = new System.Drawing.Size(141, 38);
+            this.btnAnagram.TabIndex = 2;
+            this.btnAnagram.Text = "Anagram";
+            this.btnAnagram.UseVisualStyleBackColor = true;
+            this.btnAnagram.Click += new System.EventHandler(this.btnAnagram_Click);
             // 
             // App
             // 
@@ -146,8 +183,9 @@
             this.Text = "Main";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -163,6 +201,9 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button simpleSockClient;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnQuiz1;
+        private System.Windows.Forms.Button btnPatternMatch;
+        private System.Windows.Forms.Button btnAnagram;
     }
 }
 
