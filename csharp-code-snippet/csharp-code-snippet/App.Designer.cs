@@ -37,9 +37,11 @@
             this.btnSortDictionary1 = new System.Windows.Forms.Button();
             this.btnSortDictionary2 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnQuiz1 = new System.Windows.Forms.Button();
-            this.btnPatternMatch = new System.Windows.Forms.Button();
+            this.btnPermutation = new System.Windows.Forms.Button();
             this.btnAnagram = new System.Windows.Forms.Button();
+            this.btnPatternMatch = new System.Windows.Forms.Button();
+            this.btnQuiz1 = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -132,6 +134,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnCalculate);
+            this.tabPage2.Controls.Add(this.btnPermutation);
             this.tabPage2.Controls.Add(this.btnAnagram);
             this.tabPage2.Controls.Add(this.btnPatternMatch);
             this.tabPage2.Controls.Add(this.btnQuiz1);
@@ -143,15 +147,25 @@
             this.tabPage2.Text = "Quiz";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // btnQuiz1
+            // btnPermutation
             // 
-            this.btnQuiz1.Location = new System.Drawing.Point(20, 24);
-            this.btnQuiz1.Name = "btnQuiz1";
-            this.btnQuiz1.Size = new System.Drawing.Size(141, 38);
-            this.btnQuiz1.TabIndex = 0;
-            this.btnQuiz1.Text = "PacketRestore";
-            this.btnQuiz1.UseVisualStyleBackColor = true;
-            this.btnQuiz1.Click += new System.EventHandler(this.btnQuiz1_Click);
+            this.btnPermutation.Location = new System.Drawing.Point(20, 156);
+            this.btnPermutation.Name = "btnPermutation";
+            this.btnPermutation.Size = new System.Drawing.Size(141, 37);
+            this.btnPermutation.TabIndex = 6;
+            this.btnPermutation.Text = "Permutation";
+            this.btnPermutation.UseVisualStyleBackColor = true;
+            this.btnPermutation.Click += new System.EventHandler(this.btnPermutation_Click);
+            // 
+            // btnAnagram
+            // 
+            this.btnAnagram.Location = new System.Drawing.Point(20, 112);
+            this.btnAnagram.Name = "btnAnagram";
+            this.btnAnagram.Size = new System.Drawing.Size(141, 38);
+            this.btnAnagram.TabIndex = 2;
+            this.btnAnagram.Text = "Anagram";
+            this.btnAnagram.UseVisualStyleBackColor = true;
+            this.btnAnagram.Click += new System.EventHandler(this.btnAnagram_Click);
             // 
             // btnPatternMatch
             // 
@@ -163,15 +177,25 @@
             this.btnPatternMatch.UseVisualStyleBackColor = true;
             this.btnPatternMatch.Click += new System.EventHandler(this.btnPatternMatch_Click);
             // 
-            // btnAnagram
+            // btnQuiz1
             // 
-            this.btnAnagram.Location = new System.Drawing.Point(20, 112);
-            this.btnAnagram.Name = "btnAnagram";
-            this.btnAnagram.Size = new System.Drawing.Size(141, 38);
-            this.btnAnagram.TabIndex = 2;
-            this.btnAnagram.Text = "Anagram";
-            this.btnAnagram.UseVisualStyleBackColor = true;
-            this.btnAnagram.Click += new System.EventHandler(this.btnAnagram_Click);
+            this.btnQuiz1.Location = new System.Drawing.Point(20, 24);
+            this.btnQuiz1.Name = "btnQuiz1";
+            this.btnQuiz1.Size = new System.Drawing.Size(141, 38);
+            this.btnQuiz1.TabIndex = 0;
+            this.btnQuiz1.Text = "PacketRestore";
+            this.btnQuiz1.UseVisualStyleBackColor = true;
+            this.btnQuiz1.Click += new System.EventHandler(this.btnQuiz1_Click);
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(19, 206);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(141, 37);
+            this.btnCalculate.TabIndex = 7;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // App
             // 
@@ -204,6 +228,8 @@
         private System.Windows.Forms.Button btnQuiz1;
         private System.Windows.Forms.Button btnPatternMatch;
         private System.Windows.Forms.Button btnAnagram;
+        private System.Windows.Forms.Button btnPermutation;
+        private System.Windows.Forms.Button btnCalculate;
     }
 }
 

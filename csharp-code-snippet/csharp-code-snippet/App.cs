@@ -66,5 +66,24 @@ namespace csharp_code_snippet
             Anagram anagram = new Anagram();
             anagram.Solve();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+          
+
+          
+        }
+
+        private void btnPermutation_Click(object sender, EventArgs e)
+        {
+            Permutation permutaion = new Permutation();
+            permutaion.Solve();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Calculator calc = new Calculator();
+            calc.Solve();
+        }
     }
 }
