@@ -36,10 +36,15 @@ namespace csharp_code_snippet.simpleSocket
                 if(clientSock.Connected)
                 {
                     NetworkStream stream = clientSock.GetStream();
-                    string sendMsg = "I\'m a clinet socket #" + ClientSocket.count;
-                    byte[] buffer = System.Text.Encoding.ASCII.GetBytes(sendMsg);
-                    stream.Write(buffer, 0, buffer.Length);
+                    NetworkMessage msg = new NetworkMessage(clientSock);
+                    msg.Message = "I\'m a clinet socket #" + ClientSocket.count;
+                    msg.SendMessage();
+                  
                     //Console.WriteLine("clinet: Send message -> {0}", sendMsg);
+                    //while(true)
+                    //{
+                    //    msg.ReadMessage();
+                    //}
                   
                 }
             }

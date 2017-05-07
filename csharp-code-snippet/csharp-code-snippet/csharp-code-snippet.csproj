@@ -58,7 +58,9 @@
     <Compile Include="Quiz\PatternMatch.cs" />
     <Compile Include="Quiz\Permutation.cs" />
     <Compile Include="simpleSocket\ClientSocket.cs" />
+    <Compile Include="simpleSocket\EnumMessageProtocol.cs" />
     <Compile Include="simpleSocket\HandleClient.cs" />
+    <Compile Include="simpleSocket\NetworkMessage.cs" />
     <Compile Include="simpleSocket\SocketServer.cs" />
     <Compile Include="sort\DictionaryComparer.cs" />
     <Compile Include="sort\DictionarySort.cs" />
