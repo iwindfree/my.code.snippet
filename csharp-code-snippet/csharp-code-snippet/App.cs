@@ -1,4 +1,5 @@
-﻿using csharp_code_snippet.Quiz;
+﻿using csharp_code_snippet.DatetimeUtil;
+using csharp_code_snippet.Quiz;
 using csharp_code_snippet.simpleSocket;
 using csharp_code_snippet.sort;
 using System;
@@ -84,6 +85,31 @@ namespace csharp_code_snippet
         {
             Calculator calc = new Calculator();
             calc.Solve();
+        }
+
+        private void btnCheckPair_Click(object sender, EventArgs e)
+        {
+            CheckPair pair = new CheckPair();
+            pair.Solve();
+        }
+
+        private void btnCompress_Click(object sender, EventArgs e)
+        {
+            WordCompressor compressor = new WordCompressor();
+            compressor.Solve();
+        }
+
+        private void btnRank_Click(object sender, EventArgs e)
+        {
+            Ranking rank = new Ranking();
+            rank.Solve();
+        }
+
+        private void btnSecOfDateTime_Click(object sender, EventArgs e)
+        {
+            DtUtil datetimeUtil = new DtUtil();
+            datetimeUtil.GetSeconds();
+            datetimeUtil.StringToDatetime();
         }
     }
 }

@@ -30,6 +30,7 @@ namespace csharp_code_snippet.Quiz
             {
                 string[] packets = { "1I_LOVE", "3G_CNS", "4CNS!!", "2VE_L" ,"6hahaha" };
                 Dictionary<int, string> dicPackes = new Dictionary<int, string>();
+
                 foreach (string v in packets)
                 {
                     string tempKey = v.Substring(0, 1);
@@ -38,7 +39,7 @@ namespace csharp_code_snippet.Quiz
                     dicPackes.Add(key, value);
                 }
 
-               var sortDic = from value in dicPackes
+                var sortDic = from value in dicPackes
                               orderby value.Key
                               select value;
 

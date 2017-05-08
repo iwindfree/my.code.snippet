@@ -37,11 +37,15 @@
             this.btnSortDictionary1 = new System.Windows.Forms.Button();
             this.btnSortDictionary2 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnRank = new System.Windows.Forms.Button();
+            this.btnCompress = new System.Windows.Forms.Button();
+            this.btnCheckPair = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.btnPermutation = new System.Windows.Forms.Button();
             this.btnAnagram = new System.Windows.Forms.Button();
             this.btnPatternMatch = new System.Windows.Forms.Button();
             this.btnQuiz1 = new System.Windows.Forms.Button();
-            this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnSecOfDateTime = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -62,6 +66,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnSecOfDateTime);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -134,6 +139,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnRank);
+            this.tabPage2.Controls.Add(this.btnCompress);
+            this.tabPage2.Controls.Add(this.btnCheckPair);
             this.tabPage2.Controls.Add(this.btnCalculate);
             this.tabPage2.Controls.Add(this.btnPermutation);
             this.tabPage2.Controls.Add(this.btnAnagram);
@@ -146,6 +154,46 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quiz";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnRank
+            // 
+            this.btnRank.Location = new System.Drawing.Point(21, 342);
+            this.btnRank.Name = "btnRank";
+            this.btnRank.Size = new System.Drawing.Size(139, 33);
+            this.btnRank.TabIndex = 10;
+            this.btnRank.Text = "Rank";
+            this.btnRank.UseVisualStyleBackColor = true;
+            this.btnRank.Click += new System.EventHandler(this.btnRank_Click);
+            // 
+            // btnCompress
+            // 
+            this.btnCompress.Location = new System.Drawing.Point(22, 297);
+            this.btnCompress.Name = "btnCompress";
+            this.btnCompress.Size = new System.Drawing.Size(138, 35);
+            this.btnCompress.TabIndex = 9;
+            this.btnCompress.Text = "Compress";
+            this.btnCompress.UseVisualStyleBackColor = true;
+            this.btnCompress.Click += new System.EventHandler(this.btnCompress_Click);
+            // 
+            // btnCheckPair
+            // 
+            this.btnCheckPair.Location = new System.Drawing.Point(22, 254);
+            this.btnCheckPair.Name = "btnCheckPair";
+            this.btnCheckPair.Size = new System.Drawing.Size(138, 37);
+            this.btnCheckPair.TabIndex = 8;
+            this.btnCheckPair.Text = "bntCheckPair";
+            this.btnCheckPair.UseVisualStyleBackColor = true;
+            this.btnCheckPair.Click += new System.EventHandler(this.btnCheckPair_Click);
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(19, 206);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(141, 37);
+            this.btnCalculate.TabIndex = 7;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // btnPermutation
             // 
@@ -187,15 +235,15 @@
             this.btnQuiz1.UseVisualStyleBackColor = true;
             this.btnQuiz1.Click += new System.EventHandler(this.btnQuiz1_Click);
             // 
-            // btnCalculate
+            // btnSecOfDateTime
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(19, 206);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(141, 37);
-            this.btnCalculate.TabIndex = 7;
-            this.btnCalculate.Text = "Calculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.button1_Click_2);
+            this.btnSecOfDateTime.Location = new System.Drawing.Point(14, 266);
+            this.btnSecOfDateTime.Name = "btnSecOfDateTime";
+            this.btnSecOfDateTime.Size = new System.Drawing.Size(153, 36);
+            this.btnSecOfDateTime.TabIndex = 5;
+            this.btnSecOfDateTime.Text = "SecOfDatetime";
+            this.btnSecOfDateTime.UseVisualStyleBackColor = true;
+            this.btnSecOfDateTime.Click += new System.EventHandler(this.btnSecOfDateTime_Click);
             // 
             // App
             // 
@@ -230,6 +278,10 @@
         private System.Windows.Forms.Button btnAnagram;
         private System.Windows.Forms.Button btnPermutation;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnCheckPair;
+        private System.Windows.Forms.Button btnCompress;
+        private System.Windows.Forms.Button btnRank;
+        private System.Windows.Forms.Button btnSecOfDateTime;
     }
 }
 

@@ -52,11 +52,15 @@
     <Compile Include="App.Designer.cs">
       <DependentUpon>App.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatetimeUtil\DtUtil.cs" />
     <Compile Include="Quiz\Anagram.cs" />
     <Compile Include="Quiz\Calculator.cs" />
+    <Compile Include="Quiz\CheckPair.cs" />
     <Compile Include="Quiz\PacketRestore.cs" />
     <Compile Include="Quiz\PatternMatch.cs" />
     <Compile Include="Quiz\Permutation.cs" />
+    <Compile Include="Quiz\Ranking.cs" />
+    <Compile Include="Quiz\WordCompressor.cs" />
     <Compile Include="simpleSocket\ClientSocket.cs" />
     <Compile Include="simpleSocket\EnumMessageProtocol.cs" />
     <Compile Include="simpleSocket\HandleClient.cs" />
