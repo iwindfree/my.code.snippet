@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnSecOfDateTime = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.simpleSockClient = new System.Windows.Forms.Button();
             this.simpleSockSrv = new System.Windows.Forms.Button();
@@ -45,12 +46,18 @@
             this.btnAnagram = new System.Windows.Forms.Button();
             this.btnPatternMatch = new System.Windows.Forms.Button();
             this.btnQuiz1 = new System.Windows.Forms.Button();
-            this.btnSecOfDateTime = new System.Windows.Forms.Button();
+            this.btnParallel = new System.Windows.Forms.Button();
+            this.btnMasking = new System.Windows.Forms.Button();
+            this.btnCheckPairty = new System.Windows.Forms.Button();
+            this.btnCheckPwd = new System.Windows.Forms.Button();
+            this.btnThreadPool = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -66,6 +73,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.btnSecOfDateTime);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
@@ -77,6 +85,16 @@
             this.tabPage1.Text = "Snippet 1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnSecOfDateTime
+            // 
+            this.btnSecOfDateTime.Location = new System.Drawing.Point(14, 266);
+            this.btnSecOfDateTime.Name = "btnSecOfDateTime";
+            this.btnSecOfDateTime.Size = new System.Drawing.Size(153, 36);
+            this.btnSecOfDateTime.TabIndex = 5;
+            this.btnSecOfDateTime.Text = "DatetimeUtil";
+            this.btnSecOfDateTime.UseVisualStyleBackColor = true;
+            this.btnSecOfDateTime.Click += new System.EventHandler(this.btnSecOfDateTime_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.simpleSockClient);
@@ -86,6 +104,7 @@
             this.groupBox2.Size = new System.Drawing.Size(176, 110);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "network";
             // 
             // simpleSockClient
             // 
@@ -116,6 +135,7 @@
             this.groupBox1.Size = new System.Drawing.Size(177, 101);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dictionary";
             // 
             // btnSortDictionary1
             // 
@@ -139,6 +159,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnCheckPwd);
+            this.tabPage2.Controls.Add(this.btnCheckPairty);
+            this.tabPage2.Controls.Add(this.btnMasking);
             this.tabPage2.Controls.Add(this.btnRank);
             this.tabPage2.Controls.Add(this.btnCompress);
             this.tabPage2.Controls.Add(this.btnCheckPair);
@@ -235,15 +258,66 @@
             this.btnQuiz1.UseVisualStyleBackColor = true;
             this.btnQuiz1.Click += new System.EventHandler(this.btnQuiz1_Click);
             // 
-            // btnSecOfDateTime
+            // btnParallel
             // 
-            this.btnSecOfDateTime.Location = new System.Drawing.Point(14, 266);
-            this.btnSecOfDateTime.Name = "btnSecOfDateTime";
-            this.btnSecOfDateTime.Size = new System.Drawing.Size(153, 36);
-            this.btnSecOfDateTime.TabIndex = 5;
-            this.btnSecOfDateTime.Text = "SecOfDatetime";
-            this.btnSecOfDateTime.UseVisualStyleBackColor = true;
-            this.btnSecOfDateTime.Click += new System.EventHandler(this.btnSecOfDateTime_Click);
+            this.btnParallel.Location = new System.Drawing.Point(6, 16);
+            this.btnParallel.Name = "btnParallel";
+            this.btnParallel.Size = new System.Drawing.Size(153, 36);
+            this.btnParallel.TabIndex = 6;
+            this.btnParallel.Text = "Parallel";
+            this.btnParallel.UseVisualStyleBackColor = true;
+            this.btnParallel.Click += new System.EventHandler(this.btnParallel_Click);
+            // 
+            // btnMasking
+            // 
+            this.btnMasking.Location = new System.Drawing.Point(22, 381);
+            this.btnMasking.Name = "btnMasking";
+            this.btnMasking.Size = new System.Drawing.Size(139, 33);
+            this.btnMasking.TabIndex = 11;
+            this.btnMasking.Text = "Masking";
+            this.btnMasking.UseVisualStyleBackColor = true;
+            this.btnMasking.Click += new System.EventHandler(this.btnMasking_Click);
+            // 
+            // btnCheckPairty
+            // 
+            this.btnCheckPairty.Location = new System.Drawing.Point(22, 420);
+            this.btnCheckPairty.Name = "btnCheckPairty";
+            this.btnCheckPairty.Size = new System.Drawing.Size(139, 33);
+            this.btnCheckPairty.TabIndex = 12;
+            this.btnCheckPairty.Text = "CheckPairty";
+            this.btnCheckPairty.UseVisualStyleBackColor = true;
+            this.btnCheckPairty.Click += new System.EventHandler(this.btnCheckPairty_Click);
+            // 
+            // btnCheckPwd
+            // 
+            this.btnCheckPwd.Location = new System.Drawing.Point(167, 24);
+            this.btnCheckPwd.Name = "btnCheckPwd";
+            this.btnCheckPwd.Size = new System.Drawing.Size(139, 33);
+            this.btnCheckPwd.TabIndex = 13;
+            this.btnCheckPwd.Text = "checkPassword";
+            this.btnCheckPwd.UseVisualStyleBackColor = true;
+            this.btnCheckPwd.Click += new System.EventHandler(this.btnCheckPwd_Click);
+            // 
+            // btnThreadPool
+            // 
+            this.btnThreadPool.Location = new System.Drawing.Point(6, 58);
+            this.btnThreadPool.Name = "btnThreadPool";
+            this.btnThreadPool.Size = new System.Drawing.Size(153, 36);
+            this.btnThreadPool.TabIndex = 7;
+            this.btnThreadPool.Text = "ThreadPool1";
+            this.btnThreadPool.UseVisualStyleBackColor = true;
+            this.btnThreadPool.Click += new System.EventHandler(this.btnThreadPool_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnParallel);
+            this.groupBox3.Controls.Add(this.btnThreadPool);
+            this.groupBox3.Location = new System.Drawing.Point(201, 24);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(166, 152);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Concurrent";
             // 
             // App
             // 
@@ -258,6 +332,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -282,6 +357,12 @@
         private System.Windows.Forms.Button btnCompress;
         private System.Windows.Forms.Button btnRank;
         private System.Windows.Forms.Button btnSecOfDateTime;
+        private System.Windows.Forms.Button btnParallel;
+        private System.Windows.Forms.Button btnMasking;
+        private System.Windows.Forms.Button btnCheckPairty;
+        private System.Windows.Forms.Button btnCheckPwd;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnThreadPool;
     }
 }
 

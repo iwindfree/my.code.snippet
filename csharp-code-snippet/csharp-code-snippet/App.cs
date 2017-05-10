@@ -1,7 +1,9 @@
-﻿using csharp_code_snippet.DatetimeUtil;
+﻿using csharp_code_snippet.Concurrent;
+using csharp_code_snippet.DatetimeUtil;
 using csharp_code_snippet.Quiz;
 using csharp_code_snippet.simpleSocket;
 using csharp_code_snippet.sort;
+using Quiz;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +19,8 @@ namespace csharp_code_snippet
 {
     public partial class App : Form
     {
+        public object Password { get; private set; }
+
         public App()
         {
             InitializeComponent();
@@ -77,7 +81,7 @@ namespace csharp_code_snippet
 
         private void btnPermutation_Click(object sender, EventArgs e)
         {
-            Permutation permutaion = new Permutation();
+            Permutaion permutaion = new Permutaion();
             permutaion.Solve();
         }
 
@@ -111,5 +115,40 @@ namespace csharp_code_snippet
             datetimeUtil.GetSeconds();
             datetimeUtil.StringToDatetime();
         }
+
+        private void btnParallel_Click(object sender, EventArgs e)
+        {
+            ParallelTest parallel = new ParallelTest();
+            parallel.Do();
+
+        }
+
+        private void btnMasking_Click(object sender, EventArgs e)
+        {
+            Masking masking  = new Masking();
+            masking.MaskName("김경남");
+            masking.MaskCard("1234=8764-0987-9878");
+            masking.MaskRrn("730301-1193833");
+           
+        }
+
+        private void btnCheckPairty_Click(object sender, EventArgs e)
+        {
+            CheckParity pairty = new CheckParity();
+            pairty.Solve();
+        }
+
+        private void btnCheckPwd_Click(object sender, EventArgs e)
+        {
+            Password pwd = new Password();
+            pwd.Solve();
+        }
+
+        private void btnThreadPool_Click(object sender, EventArgs e)
+        {
+            ThreadPool2 threadPool = new ThreadPool2();
+            threadPool.Do();
+        }
     }
 }
+    
