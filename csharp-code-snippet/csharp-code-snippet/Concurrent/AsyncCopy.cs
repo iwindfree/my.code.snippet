@@ -27,7 +27,7 @@ namespace csharp_code_snippet.Concurrent
                 FileCopyAction(new string[] { src, src + ".copy2" });
 
             });
-            t2.Start();
+           
 
             t1.Wait();
             t2.Wait();
