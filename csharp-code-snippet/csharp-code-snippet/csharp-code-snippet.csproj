@@ -55,6 +55,8 @@
     <Compile Include="App.Designer.cs">
       <DependentUpon>App.cs</DependentUpon>
     </Compile>
+    <Compile Include="Concurrent\AsyncCopy.cs" />
+    <Compile Include="Concurrent\AsyncResult.cs" />
     <Compile Include="Concurrent\ParallelTest.cs" />
     <Compile Include="Concurrent\ThreadPool2.cs" />
     <Compile Include="Concurrent\ThreadPool1.cs" />
