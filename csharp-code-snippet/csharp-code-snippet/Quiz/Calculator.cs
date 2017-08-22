@@ -26,6 +26,7 @@ namespace csharp_code_snippet.Quiz
             Execute(exp);
         }
 
+
         private void Execute(string exp)
         {
 
@@ -131,6 +132,7 @@ namespace csharp_code_snippet.Quiz
         private bool IsNumber(string s)
         {
             return Regex.IsMatch(s, @"[\d]");
+            
         }
 
         private int GetRank(string s)

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CA04A4D3-DD97-40DC-85DF-2FDC74E613CB}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>csharp_code_snippet</RootNamespace>
     <AssemblyName>csharp-code-snippet</AssemblyName>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>csharp_code_snippet.Quiz.compare.BoxCompare</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -58,8 +61,11 @@
     <Compile Include="DatetimeUtil\DtUtil.cs" />
     <Compile Include="Quiz\Anagram.cs" />
     <Compile Include="Quiz\Calculator.cs" />
+    <Compile Include="Quiz\Calculator2.cs" />
     <Compile Include="Quiz\CheckPair.cs" />
     <Compile Include="Quiz\CheckPairty.cs" />
+    <Compile Include="Quiz\compare\Box.cs" />
+    <Compile Include="Quiz\compare\BoxCompare.cs" />
     <Compile Include="Quiz\PacketRestore.cs" />
     <Compile Include="Quiz\Masking.cs" />
     <Compile Include="Quiz\Password.cs" />

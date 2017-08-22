@@ -41,7 +41,7 @@ namespace csharp_code_snippet.Quiz
             {56789, 80, 100},
             {67890, 80, 50}};
 
-            int[][] scores_new = new int[6][];
+            int[][] scores_new = new int[6][]; 
             for(int i = 0; i < scores.GetLength(0); i++)
             {
 
